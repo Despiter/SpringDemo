@@ -1,16 +1,14 @@
 package com.martin.spring;
 
-import com.sun.xml.internal.ws.util.StringUtils;
-
 import java.io.File;
 import java.net.URL;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class MartinApplicationContext {
 
-    private Class<?> configClass;
+    private final Class<?> configClass;
 
-    private ConcurrentHashMap<String, BeanDefinition> beanDefinitionMap = new ConcurrentHashMap<>();
+    private final ConcurrentHashMap<String, BeanDefinition> beanDefinitionMap = new ConcurrentHashMap<>();
 
     public MartinApplicationContext(Class<?> configClass) {
         this.configClass = configClass;
