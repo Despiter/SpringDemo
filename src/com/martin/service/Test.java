@@ -7,6 +7,6 @@ public class Test {
         MartinApplicationContext martinApplicationContext = new MartinApplicationContext(AppConfig.class);
 
         UserService userService = (UserService) martinApplicationContext.getBean("userService");
-
+        System.out.println(userService);
     }
 }
